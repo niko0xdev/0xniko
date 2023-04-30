@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 :root {
   --background-color: #f4f3f4;
   --text-color: #3d3d3d;
@@ -5,25 +7,46 @@
   --blue-color: #09469e;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background-color: #3d3d3d;
-//     --text-color: #f4f3f4;
-//     --hl-color: #c2352c;
-//     --blue-color: #09469e;
-//   }
-// }
-
 @layer base {
   :root {
     --primary-color: #f4f3f4;
     --secondary-color: #3d3d3d;
+    --blue-color: #09469e;
+    --hl-color: #c2352c;
   }
 }
 
+body {
+  // letter-spacing: 0.065rem;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  color: var(--text-color);
+  font-size: 1.33rem;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
 @layer utilities {
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
   .border-primary {
     border-color: var(--text-color);
+  }
+  .text-hl {
+    color: var(--hl-color);
+  }
+  .border-hl {
+    border-color: var(--hl-color);
+  }
+  .border-blue {
+    border-color: var(--blue-color);
+  }
+  .text-blue {
+    color: var(--blue-color);
+  }
+  .text-8bit {
+    font-family: 'Press Start 2P', cursive;
   }
 }
 

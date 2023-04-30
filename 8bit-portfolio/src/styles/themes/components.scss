@@ -29,3 +29,55 @@
     @apply ml-4 mr-4;
   }
 }
+
+.timeline {
+  @apply w-full;
+
+  &-items {
+    @apply flex flex-col justify-between items-start border-l-2 border-blue relative;
+
+    > * {
+      @apply mr-8;
+    }
+  }
+
+  &-item-img {
+    @apply -ml-[13px] flex h-[25px] w-[25px] items-center justify-center rounded-full;
+  }
+
+  &-item-content {
+    @apply mb-10 ml-8 block -mt-[25px] rounded-lg;
+  }
+
+  &-img {
+    @apply rounded-full border-[2px] border-blue w-10 h-10 max-w-xs p-2 absolute bg-primary z-50;
+  }
+
+  &-company {
+    @apply text-2xl font-bold text-blue underline leading-5;
+  }
+
+  &-title {
+    @apply text-sm mt-2 font-bold;
+  }
+
+  &-date {
+    @apply text-sm flex items-center text-hl italic;
+
+    > * {
+      @apply mr-2;
+    }
+  }
+
+  &-content {
+    @apply text-lg;
+  }
+
+  &-big {
+    @apply text-2xl font-bold w-full mb-2;
+  }
+
+  &-small {
+    @apply text-lg w-full mb-8;
+  }
+}

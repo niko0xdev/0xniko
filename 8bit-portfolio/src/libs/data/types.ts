@@ -20,3 +20,12 @@ export type Contact = {
   intro: string;
   social: Social;
 };
+
+export type TimelineItem = {
+  logo: string;
+  company: string;
+  title: string;
+  description: string;
+  to: string;
+  from: string;
+};
