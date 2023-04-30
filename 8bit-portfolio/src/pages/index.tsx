@@ -4,21 +4,28 @@ import { getContactData } from '@/libs/data/contact';
 import { getTimelineData } from '@/libs/data/timeline';
 import { Contact, TimelineItem } from '@/libs/data/types';
 import { NextPage } from 'next';
+import Head from 'next/head';
 
-const HomePage: NextPage<{
+type HomePageProps = {
   contact: Contact;
   timelines: TimelineItem[];
-}> = ({ contact, timelines }) => {
-  console.log(timelines);
+};
 
+const HomePage: NextPage<HomePageProps> = ({ contact, timelines }) => {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24`}
-    >
-      <Summary contact={contact || {}} />
+    <>
+      <Head>
+        <title>Niko Home | Senior Software Engineering, DevOps Engineer</title>
+      </Head>
 
-      <Timeline items={timelines || []} />
-    </main>
+      <main
+        className={`flex min-h-screen flex-col items-center justify-between p-24`}
+      >
+        <Summary contact={contact || {}} />
+
+        <Timeline items={timelines || []} />
+      </main>
+    </>
   );
 };
 

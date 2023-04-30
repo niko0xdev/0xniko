@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Niko | Senior Software Engineering, DevOps Engineer</title>
         <link rel="shortcut icon" href="/favicon.png" />
         <meta
           name="description"
