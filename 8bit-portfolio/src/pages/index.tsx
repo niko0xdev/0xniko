@@ -19,7 +19,7 @@ const HomePage: NextPage<HomePageProps> = ({ contact, timelines }) => {
       </Head>
 
       <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24`}
+        className={`flex min-h-screen flex-col items-center justify-between p-6 md:p-24`}
       >
         <Summary contact={contact || {}} />
 

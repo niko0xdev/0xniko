@@ -6,19 +6,19 @@
   }
 
   &-profile-img {
-    @apply rounded-full border-[5px] border-primary w-52 h-52;
+    @apply rounded-full border-[5px] border-primary w-40 h-40 md:w-52 md:h-52 ;
   }
 
   &-name {
-    @apply text-6xl font-bold;
+    @apply text-3xl font-bold md:text-6xl;
   }
 
   &-title {
-    @apply text-2xl font-bold flex-wrap;
+    @apply text-lg font-bold flex-wrap md:text-2xl text-center;
   }
 
   &-intro {
-    @apply text-lg text-justify;
+    @apply text-base text-justify md:text-lg;
   }
 
   &-links {
@@ -50,15 +50,15 @@
   }
 
   &-img {
-    @apply rounded-full border-[2px] border-blue w-10 h-10 max-w-xs p-2 absolute bg-primary z-50;
+    @apply rounded-full border-[2px] border-blue w-8 h-8 md:w-10 md:h-10 max-w-xs p-0.5 md:p-2 absolute bg-primary z-50;
   }
 
   &-company {
-    @apply text-2xl font-bold text-blue underline leading-5;
+    @apply text-xl font-bold text-blue underline leading-5 md:text-2xl;
   }
 
   &-title {
-    @apply text-sm mt-2 font-bold;
+    @apply text-sm mt-2 font-bold md:text-sm;
   }
 
   &-date {
@@ -70,11 +70,11 @@
   }
 
   &-content {
-    @apply text-lg text-justify;
+    @apply text-base text-justify md:text-lg;
   }
 
   &-big {
-    @apply text-2xl font-bold w-full mb-2 flex;
+    @apply text-xl font-bold w-full mb-2 flex md:text-2xl;
 
     > * {
       @apply mr-2;
@@ -82,6 +82,6 @@
   }
 
   &-small {
-    @apply text-lg w-full mb-8;
+    @apply text-base w-full mb-8 md:text-lg;
   }
 }
