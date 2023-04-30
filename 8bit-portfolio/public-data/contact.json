@@ -1,0 +1,29 @@
+{
+  "name": "Niko",
+  "profileImg": "/images/gentle.svg",
+  "email": "niko0xdev@gmail.com",
+  "title": "Senior Software Engineering, DevOps Engineer",
+  "intro": "For over 14 years, I've been providing my skills in front-end development, design and technical writing to clients such as Nordhealth, Google, Buffer, Netlify, Ghost, Octopus Energy, Stackbit and many more. Check out my work and articles. If you like what you see get in touch.",
+  "social": {
+    "twitter": {
+      "url": "niko0xdev",
+      "icon": "/images/twitter.png"
+    },
+    "github": {
+      "url": "niko0xdev",
+      "icon": "/images/github.png"
+    },
+    "linkedin": {
+      "url": "niko0xdev",
+      "icon": "/images/linkedin.png"
+    },
+    "blog": {
+      "url": "niko0xdev",
+      "icon": "/images/kong.png"
+    },
+    "mail": {
+      "url": "niko0xdev",
+      "icon": "/images/mail.png"
+    }
+  }
+}

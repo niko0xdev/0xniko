@@ -1,0 +1,31 @@
+.summary {
+  @apply pt-5 w-full;
+
+  > * {
+    @apply mb-4;
+  }
+
+  &-profile-img {
+    @apply rounded-full border-[5px] border-primary w-52 h-52;
+  }
+
+  &-name {
+    @apply text-6xl font-bold;
+  }
+
+  &-title {
+    @apply text-2xl font-bold flex-wrap;
+  }
+
+  &-intro {
+    @apply text-lg;
+  }
+
+  &-links {
+    @apply flex justify-between;
+  }
+
+  &-link {
+    @apply ml-4 mr-4;
+  }
+}
