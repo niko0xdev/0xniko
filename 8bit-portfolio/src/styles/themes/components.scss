@@ -18,7 +18,7 @@
   }
 
   &-intro {
-    @apply text-lg;
+    @apply text-lg text-justify;
   }
 
   &-links {
@@ -70,11 +70,15 @@
   }
 
   &-content {
-    @apply text-lg;
+    @apply text-lg text-justify;
   }
 
   &-big {
-    @apply text-2xl font-bold w-full mb-2;
+    @apply text-2xl font-bold w-full mb-2 flex;
+
+    > * {
+      @apply mr-2;
+    }
   }
 
   &-small {

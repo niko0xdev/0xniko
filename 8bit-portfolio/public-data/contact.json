@@ -3,27 +3,37 @@
   "profileImg": "/images/gentle.svg",
   "email": "niko0xdev@gmail.com",
   "title": "Senior Software Engineering, DevOps Engineer",
-  "intro": "For over 14 years, I've been providing my skills in front-end development, design and technical writing to clients such as Nordhealth, Google, Buffer, Netlify, Ghost, Octopus Energy, Stackbit and many more. Check out my work and articles. If you like what you see get in touch.",
+  "intro": "Hi, I'm Niko. I have over 8 years of experience in the Software Development. My interest in IT began at a young age, and I have since dedicated myself to learning and mastering various programming languages, software development methodologies, and tools. My passion for software engineering has driven me to strive towards becoming a Principal Software Engineer, where I can apply my skills and knowledge to lead complex projects and delve into core technologies. \n\"To be a giant, let's try to be an ant knight!\" It reminds me to stay humble, work hard, and always strive for excellence, no matter how small the steps may seem. Nice to meet you!",
   "social": {
     "twitter": {
-      "url": "niko0xdev",
+      "label": "Twitter",
+      "url": "https://twitter.com/nikoderdev",
       "icon": "/images/twitter.png"
     },
     "github": {
-      "url": "niko0xdev",
+      "label": "Github",
+      "url": "https://github.com/niko0xdev",
       "icon": "/images/github.png"
     },
     "linkedin": {
-      "url": "niko0xdev",
+      "label": "Linkedin",
+      "url": "https://www.linkedin.com/in/duyluongphung/",
       "icon": "/images/linkedin.png"
     },
     "blog": {
-      "url": "niko0xdev",
+      "label": "My Blog",
+      "url": "https://blog.nikoder.dev/",
       "icon": "/images/kong.png"
     },
     "mail": {
-      "url": "niko0xdev",
+      "label": "Mail to me",
+      "url": "mailto:niko0xdev@gmail.com",
       "icon": "/images/mail.png"
+    },
+    "telegram": {
+      "label": "Telegram to me",
+      "url": "https://t.me/niko0xdev",
+      "icon": "/images/send.png"
     }
   }
 }

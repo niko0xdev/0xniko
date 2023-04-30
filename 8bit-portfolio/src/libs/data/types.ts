@@ -2,11 +2,13 @@ export enum SocialVendor {
   GITHUB = 'github',
   TWITTER = 'twitter',
   LINKEDIN = 'linkedin',
-  BLOG = 'blog'
+  BLOG = 'blog',
+  TELEGRAM = 'telegram',
 }
 
 export type Social = {
   [key in SocialVendor]?: {
+    label: string;
     url: string;
     icon: string;
   };

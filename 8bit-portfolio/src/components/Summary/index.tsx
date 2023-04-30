@@ -1,7 +1,6 @@
+import { Contact, SocialVendor } from '@/libs/data/types';
 import Image from 'next/image';
 import React, { HTMLAttributes } from 'react';
-import { Contact, SocialVendor } from '@/libs/data/types';
-import styles from './Summary.module.scss';
 
 export type SummaryProps = HTMLAttributes<HTMLDivElement> & {
   contact: Contact;
@@ -10,6 +9,7 @@ export type SummaryProps = HTMLAttributes<HTMLDivElement> & {
 const Summary: React.FC<SummaryProps> = ({ className, contact }) => {
   const { name, title, profileImg, intro, social } = contact;
   const links: SocialVendor[] = Object.keys(social) as any[];
+  const intoParagraphs = intro.split('\n');
 
   return (
     <div
@@ -29,7 +29,11 @@ const Summary: React.FC<SummaryProps> = ({ className, contact }) => {
       <h2 className="summary-name">{name}</h2>
       <h4 className="summary-title">{title}</h4>
 
-      <p className="summary-intro">{intro}</p>
+      {intoParagraphs.map((paragraph, idx) => (
+        <p key={idx} className="summary-intro">
+          {paragraph}
+        </p>
+      ))}
 
       <div className="summary-links">
         {links.map((link) => (
@@ -45,6 +49,7 @@ const Summary: React.FC<SummaryProps> = ({ className, contact }) => {
               alt={link}
               width={24}
               height={24}
+              title={social[link]?.label}
             />
           </a>
         ))}
