@@ -6,7 +6,7 @@
   }
 
   &-profile-img {
-    @apply rounded-full border-[5px] border-primary w-40 h-40 md:w-52 md:h-52 ;
+    @apply rounded-full border-[5px] border-primary w-40 h-40 md:w-52 md:h-52;
   }
 
   &-name {
@@ -83,5 +83,15 @@
 
   &-small {
     @apply text-base w-full mb-8 md:text-lg;
+  }
+
+  &-last-item {
+    @apply w-full;
+  }
+}
+
+.page {
+  &-main {
+    @apply flex min-h-screen flex-col items-center justify-between p-6 md:p-24 xl:p-96 pt-6 pb-6 md:pt-6 xl:pt-6 md:pb-6 xl:pb-6;
   }
 }

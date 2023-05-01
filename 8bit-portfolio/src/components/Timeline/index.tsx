@@ -51,7 +51,7 @@ const Timeline: React.FC<TimelineProps> = ({ className, items = [] }) => {
         ))}
       </ol>
       {lastItem && (
-        <div key={items.length}>
+        <div key={items.length} className='timeline-last-item'>
           <div className="flex-start">
             <div className="timeline-item-img">
               <Image

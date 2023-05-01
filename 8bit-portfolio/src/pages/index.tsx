@@ -18,9 +18,7 @@ const HomePage: NextPage<HomePageProps> = ({ contact, timelines }) => {
         <title>Niko Home | Senior Software Engineering, DevOps Engineer</title>
       </Head>
 
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between p-6 md:p-24`}
-      >
+      <main className="page-main">
         <Summary contact={contact || {}} />
 
         <Timeline items={timelines || []} />
