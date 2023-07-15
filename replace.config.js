@@ -1,5 +1,5 @@
 module.exports = {
   files: 'dist/**',
   from: /\/_next/g,
-  to: '/rnext'
+  to: '/latest'
 };

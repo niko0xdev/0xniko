@@ -8,7 +8,8 @@
     "build": "npm run clean && next build",
     "start": "next start",
     "lint": "next lint",
-    "replace-next": "replace-in-file --configFile=replace.config.js && mv dist/_next dist/rnext"
+    "replace-next": "replace-in-file --configFile=replace.config.js && mv dist/_next dist/latest",
+    "bundle": "npm run build && npm run replace-next"
   },
   "dependencies": {
     "@types/node": "^18.16.3",

@@ -1,38 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Niko's Personal Portfolio
 
-## Getting Started
+Welcome to my personal portfolio repository! This repository contains the source code for my personal portfolio website built with Next.js, a static site generator (SSG). The portfolio website is hosted at [https://portfolio.nikoder.dev](https://portfolio.nikoder.dev).
 
-First, run the development server:
+## Quick Start Development Guide
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+To start working on my personal portfolio locally, follow these steps:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Clone the repository:**
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+   ```
+   git clone https://github.com/niko0xdev/nikoder.dev.git
+   ```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2. **Install dependencies:**
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+   ```
+   cd nikoder.dev
+   yarn install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Run the development server:**
 
-## Learn More
+   ```
+   yarn dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   The development server will start, and you can view the portfolio website by visiting [http://localhost:3000](http://localhost:3000) in your browser.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Customize the content:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   - Open the `data` directory to find the data files for different sections of the portfolio.
+   - Modify the content in these files to add your own information, such as your projects, skills, experience, and contact details.
+   - Update the styles and components in the `components` directory to match your desired design.
 
-## Deploy on Vercel
+5. **Build for production:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   When you're ready to deploy your portfolio, run the following command:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   yarn bundle
+   ```
+
+   This will generate an optimized production build in the `dist` directory.
+
+6. **Deploy to your preferred hosting platform:**
+
+   You can deploy your portfolio website to any hosting platform that supports static site hosting. Simply upload the contents of the `dist` directory to your hosting provider.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Thank you for visiting my personal portfolio repository! I hope you find my work inspiring and valuable. If you have any questions or feedback, feel free to reach out to me.
